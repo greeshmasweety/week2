@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: hsla(254, 92%, 51%, 0.963);
+            color: black;
+            padding: 10px 20px;
+            position: fixed; 
+            width: 100%;
+            top: 0; 
+            z-index: 1000; 
+            transition: background-color 0.3s ease; 
+        }
+
+        
+        .header.scrolled {
+            background-color: #555; 
+        }
+
+        .content {
+            height: 2000px; /* For demonstration purposes */
+            padding-top: 50px; /* Add padding to prevent content from being hidden behind the header */
+        }
+
+        h1 {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header" id="header">
+        Sticky Header
+    </div>
+
+    <div class="content">
+        <h1>Content Goes here check it</h1>
+    </div>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").classList.add("scrolled");
+            } else {
+                document.getElementById("header").classList.remove("scrolled");
+            }
+        }
+    </script>
+
+</body>
+</html>

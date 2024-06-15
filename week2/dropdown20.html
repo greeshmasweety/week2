@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu with Higher z-index</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1000; 
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dropdown Menu with Higher z-index</h>
+
+
+    <p><i>This is some text below the dropdown menu.Taxes as applicable as per GST @ 18%
+        *Ticket prices for children is based on height, ranging between 85 - 140 cm
+        No tickets required for kids below 85 cm in height
+        Defence Discount at Wonderla Hyderabad is only applicable for currently servicing Defence Personnel from Army, Navy & Air Force upon showing original photo ID proof issued by the relevant employment authority (Dependents of service personnel, ex-servicemen, Defence civilians cannot avail the offer)
+        Senior citizen ticket prices are applicable to guests above 60 years only upon showing original govt photo ID proof with date of birth for age verification.
+        A minimum of 20 students from a single institution are needed in a group, and authorisation letter from the head of the institution need to be submitted to avail the discount.
+    </i></p>
+
+</body>
+</html>

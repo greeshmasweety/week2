@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout with Float</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            width: 30%; /* Set the width of the sidebar */
+            float: left; /* Float the sidebar to the left */
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+        .main-content {
+            width: 70%; /* Set the width of the main content */
+            float: right; /* Float the main content to the right */
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+        /* Clear the floats */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Optional: Add some styles for better visualization */
+        .sidebar h2, .main-content h2 {
+            margin-top: 0;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2><u>Sidebar</h2></u>
+        <p>This is the sidebar content.</p>
+        <p>Do I have to pay for individual rides? Not at all, your entry ticket is inclusive of all rides. You get unlimited access to all the land rides and water rides for the day with a one-time entry ticket.</p>
+    </div>
+
+    <div class="main-content">
+        <h2><u>Main Content</u></h2>
+        <p>Adult Regular : Rs. 815/- +18% GST
+            Child* Regular : Rs. 635/- +18% GST
+            Senior Citizen (above 60 years): Rs. 610 + 18% GST
+            Senior Citizen (above 70 years): Rs. 410 + 18% GST
+            Defence: Rs. 650/- +18% GST
+            Fastrack Adult : Rs. 1225/- + 18% GST
+            Fastrack Child* : Rs. 955/- + 18% GST
+             (Weekends / Holidays)
+            Adult Regular : Rs. 1015/- +18% GST
+            Child* Regular : Rs. 790/- +18% GST
+            Senior Citizen (above 60 years): Rs. 760 + 18% GST
+            Senior Citizen (above 70 years): Rs. 510 + 18% GST
+            Defence: Rs. 810/- +18% GST
+            Fastrack Adult : Rs. 1525/- + 18% GST
+            Fastrack Child* : Rs. 1185/- + 18% GST
+            After Hours Adult (Evening Entry from 4:00 PM): Rs. 620/- + 18% GST
+            After Hours Child*/Senior Citizen/Defence (Evening Entry from 4:00 PM): Rs. 520/- + 18% GST</p>
+        <p></p>
+    </div>
+
+    <!-- Add clearfix to clear the floats -->
+    <div class="clearfix"></div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Labels in Uppercase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .primary-button {
+            background-color: hsl(200, 100%, 50%);
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase; /* Transform button label to uppercase */
+        }
+
+        .primary-button:hover {
+            background-color: hsl(200, 100%, 40%);
+        }
+
+        .primary-button:active {
+            background-color: hsl(200, 100%, 30%);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="primary-button">Primary Button</button>
+
+</body>
+</html>

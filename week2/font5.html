@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Heading Styles</title>
+    <style>
+        /
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #23b4f1;
+            padding: 20px;
+        }
+
+        #navbar {
+            position:static; 
+            top: 0; 
+            width: 100%; 
+            background-color: rgba(246, 246, 15, 0.973);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color:black; 
+            padding: 10px 0; 
+            z-index: 1000; 
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px; 
+            display: inline-block; 
+        }
+
+        #navbar a:hover {
+            background-color: #575757; 
+
+        .content {
+            padding: 60px 20px; 
+        }
+
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Arial', sans-serif; 
+            color: #333; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services timing">Services timing</a>
+        <a href="#details">details</a>
+    </div>
+    <div class="content">
+        <center>
+        <h1> welcome to nandi hills</h1>
+        </center>
+        <h2><u>Introduction about hills</h2></u>
+        <img src="https://theroamingshoes.com/wp-content/uploads/2020/10/IMG_20200115_062336-1536x1152.jpg" alt="" srcset="">
+        <h3><u>best time in hillls</h3></u>
+        <p>Best time to visit Nandi Hills
+            December – January: Sunrise is best enjoyed in the winter months. During this time, the place looks heavenly with the sun rising behind the thick layer of fluffy clouds..</p>
+        <h4><u>Another Subheading</u></h4>
+        <p>June – September: Monsoon is also  a great time to visit when the fog covered surrounding looks absolutely enchanting. But you may not be able to enjoy sunrise views at this time.</p>
+        <h5><u>how to reach nandi hills</u></h5>
+        <p>
+            Nandi Hills is approximately 60-65 kilometres from Bangalore and takes around 1.5-2 hours to reach.  The road is in good condition and is suitable for both two and four wheelers. The last few kilometres to the top of the hill is through a winding path and requires a bit of driving expertise</p>
+        <h6><u>facility on the hill top</u></h6>
+        <p>
+            Parking: Paid parking is available on top of the hill. There is ample space for parking, both near the ticket counter as well as on the top. 
+            
+            Toilets: Paid toilets are available on the top
+            
+            Food and Water: Small shops are there on top of the hill for tea/coffee and snacks. KSTDC Mayura Pine Top hotel also has a restaurant here. .</p>
+        <!-- Add more content here to demonstrate uniform heading styles -->
+    </div>
+</body>
+</html>

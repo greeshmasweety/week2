@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            background-color: hsla(120, 100%, 75%, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #2e8b57; /* SeaGreen color for the heading */
+        }
+
+        .card p {
+            color: #333333;
+        }
+
+        .card .balloons {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 150px;
+            z-index: -1;
+        }
+
+        .balloon {
+            width: 30px;
+            height: 40px;
+            background-color: #ff6347;
+            border-radius: 50%;
+            position: absolute;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(2) {
+            left: 30px;
+            background-color: #ffa500;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 60px;
+            background-color: #4682b4;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>welcome to my birthday party</h2>
+        <p>everyone to welcome my birthday party "You're invited to a day filled with laughter and joy as we celebrate [Name]'s birthday!"
+            "Join us for a memorable birthday bash honoring [Name] on [Date]. ...
+            "It's party time! ...
+            "A year older, a year bolder! ...
+            "Cake, candles, and birthday wishes! ...
+            "Let's toast to good times and great friends  </p>
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </div>
+
+</body>
+</html>
